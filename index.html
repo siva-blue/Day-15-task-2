@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="clicking(1)">
+    <div class="box">
+        <table class="table text-left">
+            <tr style="background-color: rgb(46, 46, 46);color: white;">
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Email</td>
+            </tr>
+            <tr scope="row" class="r1" style="background-color: rgb(187, 187, 187);">
+                <td id="ID1"></td>
+                <td id="NAME1"></td>
+                <td id="EMAIL1"></td>
+            </tr>
+            <tr scope="row" class="r2">
+                <td id="ID2"></td>
+                <td id="NAME2"></td>
+                <td id="EMAIL2"></td>
+            </tr>
+            <tr scope="row" class="r3" style="background-color: rgb(187, 187, 187);">
+                <td id="ID3"></td>
+                <td id="NAME3"></td>
+                <td id="EMAIL3"></td>
+            </tr>
+            <tr scope="row" class="r4">
+                <td id="ID4"></td>
+                <td id="NAME4"></td>
+                <td id="EMAIL4"></td>
+            </tr>
+            <tr scope="row" class="r5" style="background-color: rgb(187, 187, 187);">
+                <td id="ID5"></td>
+                <td id="NAME5"></td>
+                <td id="EMAIL5"></td>
+            </tr>        
+           
+        </table>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item" onmouseenter="this.style.color=red" id="pre" onclick="clicking(1)">
+            <a class="page-link" href="#">First</a></li>
+          <li class="page-item" id="first" onclick="clicking('p')">
+            <a class="page-link" href="#">Previous</a></li>
+          <li class="page-item" onclick="clicking(1)">
+            <a class="page-link" href="#">1</a></li>
+          <li class="page-item" onclick="clicking(2)">
+            <a class="page-link" href="#">2</a></li>
+          <li class="page-item" onclick="clicking(3)">
+            <a class="page-link" href="#">3</a></li>
+          <li class="page-item" onclick="clicking(4)">
+            <a class="page-link" href="#">4</a></li>
+          <li class="page-item" onclick="clicking(5)">
+            <a class="page-link" href="#">5</a></li>
+          
+          <li class="page-item" id="next" onclick="clicking('n')">
+            <a class="page-link" href="#">Next</a></li>
+          <li class="page-item" id="last" onclick="clicking(5)">
+            <a class="page-link" href="#">Last</a></li>
+        </ul>
+      </nav>
+      <script src="script.js"></script>
+</body>
+</html>
